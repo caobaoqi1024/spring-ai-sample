@@ -3,25 +3,59 @@
 layout: home
 
 hero:
-    name: "Spring AI Sample"
-    text: "This is a sample project for Spring AI"
-    tagline: My great project tagline
-    actions:
-        -   theme: brand
-            text: 概念
-            link: /1-ai-concepts
-        -   theme: alt
-            text: quickstart
-            link: /2-quickstart
-
-features:
-    -   title: Feature A
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    -   title: Feature B
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    -   title: Feature C
-        details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  name: "Spring AI Sample"
+  tagline: "This is a sample project for Spring AI"
+  image:
+    src: /logo.svg
+    alt: background
+  actions:
+    - theme: brand
+      text: 概念
+      link: /1-ai-concepts
+    - theme: alt
+      text: quickstart
+      link: /2-quickstart
 ---
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme';
+
+const members = [
+    {
+        avatar: 'https://www.github.com/caobaoqi1024.png',
+        name: 'caobaoqi1024',
+        title: 'cbq-ubuntu',
+        links: [
+            { icon: 'github', link: 'https://github.com/caobaoqi1024' },
+        ]
+    },
+    {
+        avatar: 'https://www.github.com/caobaoqi1029.png',
+        name: 'caobaoqi1029',
+        title: 'cbq-windows',
+        links: [
+            { icon: 'github', link: 'https://github.com/caobaoqi1029' },
+        ]
+    },
+]
+</script>
+
+<VPTeamMembers size="small" :members />
+
+## version info
+
+截止 `2025.5.18` Spring Ai 最新版本为 `1.0.0-SNAPSHOT` 此处我们采用 `1.0.0-RC1` 进行学习
+
+- https://docs.spring.io/spring-ai/reference
+- https://docs.spring.io/spring-ai/reference/1.0/index.html
+
+下面是其他工具的版本信息:
+
+- IntelliJ IDEA 2025.1.1.1 (Ultimate Edition)
+- Gradle-8.13
+- Spring Boot 3.4.5
+- Spring AI 1.0.0-RC1
+- Zulu-jdk 17.0.15.fx-zulu
 
 ## spring-ai-sample
 
@@ -58,20 +92,3 @@ Spring AI 主要提供以下特性:
 - Tools/Function Calling: Spring Ai 允许模型请求执行客户端工具和函数，从而根据需要访问必要的实时信息
 - Observability: Spring AI 支持对 AI 相关操作信息可见
 - AI Model Evaluation: Spring AI 可以帮助评估生成的内容并防止幻觉响应的实用程序
-
-## version info
-
-截止 `2025.5.18` Spring Ai 最新版本为 `1.0.0-SNAPSHOT` 此处我们采用 `1.0.0-RC1` 进行学习
-
-- https://docs.spring.io/spring-ai/reference
-- https://docs.spring.io/spring-ai/reference/1.0/index.html
-
-下面是其他工具的版本信息:
-
-- IntelliJ IDEA 2025.1.1.1 (Ultimate Edition)
-- Gradle-8.13
-- Spring Boot 3.4.5
-- Spring AI 1.0.0-RC1
-- Zulu-jdk 17.0.15.fx-zulu
-
-

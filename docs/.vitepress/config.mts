@@ -22,10 +22,18 @@ export default defineConfig({
         toc: {level: [2, 4]},
     },
     themeConfig: {
+        head: [["link", {rel: "icon", href: "/spring-ai-sample/favicon.ico"}]],
         logo: '/logo.svg',
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: 'Home', link: '/'},
+            {
+                text: 'AI 相关概念',
+                link: '/1-ai-concepts'
+            },
+            {
+                text: 'how-to',
+                link: '/how-to'
+            },
         ],
         footer: {
             message: 'Released under the MIT License.',

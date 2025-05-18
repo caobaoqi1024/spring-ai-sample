@@ -18,5 +18,6 @@ export default {
     },
     enhanceApp({app, router, siteData}) {
         app.use(NolebaseGitChangelogPlugin)
+
     }
 } satisfies Theme

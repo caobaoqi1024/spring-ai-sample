@@ -1,6 +1,8 @@
 .fastRequest
 *.env
-
+docs/.vitepress/dist
+docs/.vitepress/cache
+node_modules
 HELP.md
 .gradle
 build/
